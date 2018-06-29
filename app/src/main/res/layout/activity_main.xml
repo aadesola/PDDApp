@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="15dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="This Questionnaire is designed to test your knowledge of Post-Partum Depression(PDD) among Nigerian Women"
+                android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+                <EditText
+            android:id="@+id/candName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusedByDefault="true"
+            android:hint="Name" />
+
+        <TextView
+            android:id="@+id/question_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="What gender do you identify with?" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/radio_undisclosed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Undisclosed" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Would you like to help women suffering from PDD? " />
+
+        <CheckBox
+            android:id="@+id/checkbox_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Yes"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="No. I don't care."
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/question_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="How many cases of PDD are recorded per year in Nigeria?" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 million cases per year" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 million cases per year" />
+
+            <RadioButton
+                android:id="@+id/radio_question_three_option_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.5 million cases per year" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 million cases per year"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="PDD symptoms include the following except - " />
+
+        <RadioGroup
+            android:id="@+id/radio_question_four"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insomnia" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss of Apetite" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty bonding with the baby" />
+            <RadioButton
+                android:id="@+id/radio_question_four_option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laziness"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="PDD occurs among women that had a baby within the following, except" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_five"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10months" />
+
+            <RadioButton
+                android:id="@+id/radio_question_five_option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 years" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 year" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 months"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="PDD can't  be treated by the following except" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_six"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radio_question_six_option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Therapies, Antidepressant Medications, Emotional support" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forcing the woman out of her misery" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keeping her well-fed and indoors" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comparing her to other mothers"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The following causes PDD except?" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hormones and physical exhaustion" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Environment" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genetics" />
+            <RadioButton
+                android:id="@+id/radio_question_seven_option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mother-in-law issues"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/qtn_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="The following are strongest predictors of PPD except" />
+
+        <RadioGroup
+            android:id="@+id/radio_question_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stressful Pregnancy" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breastfeeding problems" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unwanted or Unplanned Pregnancy" />
+
+            <RadioButton
+                android:id="@+id/radio_question_eight_option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Premarital sex"/>
+        </RadioGroup>
+
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:onClick="submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/quiz"
+                android:paddingLeft="50dp"
+                android:text="Submit"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+
+</ScrollView>
